@@ -1,0 +1,1 @@
+https://developers.google.com/earth-engine/datasets/catalog/GOOGLE_DYNAMICWORLD_V1

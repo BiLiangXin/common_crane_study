@@ -186,10 +186,3 @@ The parameters used in the final analysis, together with the external raster ver
 - Before running the second stage, the input point table must contain the following columns: `lon`, `lat`, `datetime`, `bird_id`, `segment_id`, `cluster_id`, and `is_habitat`.
 - This repository provides analysis code and example data. Numerically identical results are not guaranteed across different versions of Python, GDAL, PROJ, or the external raster datasets.
 
-## Citation and License
-
-This repository does not currently include a separate license file.
-
-Before publicly releasing the repository or allowing reuse of the code, add an appropriate `LICENSE` file in accordance with the requirements of the authors and data providers.
-
-When using this project in a paper or report, cite the corresponding study, the GPS data source, Google Dynamic World, and the NASA Black Marble VNP46A4 dataset.

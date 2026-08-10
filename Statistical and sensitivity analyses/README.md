@@ -4,7 +4,7 @@
 
 This directory contains the statistical analyses, robustness checks, sensitivity analyses, data tables, figures, and supplementary documents prepared for the *Ecological Informatics* revision of the Common Crane migration and artificial light at night (ALAN) study.
 
-本目录收录白鹤迁徙与夜间人工光（ALAN）研究在 *Ecological Informatics* 返修过程中使用的统计分析、稳健性检验、敏感性分析、数据表、图件和补充材料。
+本目录收录灰鹤迁徙与夜间人工光（ALAN）研究在 *Ecological Informatics* 返修过程中使用的统计分析、稳健性检验、敏感性分析、数据表、图件和补充材料。
 
 ## Directory and file guide / 目录与文件说明
 

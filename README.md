@@ -5,10 +5,11 @@
 
 This project analyzes  tracking data from Common Cranes (*Grus grus*) to identify habitats and stopover sites along migration routes, extract migratory flight corridors, and assess exposure of habitats and migration corridors to artificial light at night (ALAN).
 
-The project consists of two consecutive stages:
+The project consists of two consecutive processing stages and a supplementary statistical-analysis package:
 
 1. `st-dbscan/`: Cleans  trajectories, identifies nighttime locations, and detects habitats and stopover sites using T-DBSCAN with spatiotemporal constraints.
 2. `alan analysis/`: Constructs flight lines from flight points, generates 50%, 75%, and 95% volume corridors using line kernel density estimation (line KDE), overlays the results with NASA Black Marble VNP46A4 nighttime light rasters, and calculates ALAN exposure metrics.
+3. `Statistical and sensitivity analyses/`: Provides reproducible statistical tests, robustness and sensitivity analyses, source data, figures, and manuscript supplementary files.
 
 ## Project Structure
 
@@ -185,4 +186,24 @@ The parameters used in the final analysis, together with the external raster ver
 - VNP46A4 is an external dataset. Download permissions, product versions, and quality-mask processing may affect the final results.
 - Before running the second stage, the input point table must contain the following columns: `lon`, `lat`, `datetime`, `bird_id`, `segment_id`, `cluster_id`, and `is_habitat`.
 - This repository provides analysis code and  data. Numerically identical results are not guaranteed across different versions of Python, GDAL, PROJ, or the external raster datasets.
+
+## Statistical and Sensitivity Analyses / 统计与敏感性分析
+
+The [`Statistical and sensitivity analyses/`](Statistical%20and%20sensitivity%20analyses/) directory contains the statistical and sensitivity-analysis package added for the *Ecological Informatics* revision. It includes reproducible Python code, input data, generated tables and figures, a standalone Mann–Whitney workflow, the revised manuscript, and supplementary material.
+
+[`Statistical and sensitivity analyses/`](Statistical%20and%20sensitivity%20analyses/) 目录收录为 *Ecological Informatics* 返修新增的统计与敏感性分析项目，包括可复现的 Python 代码、输入数据、生成的表格与图件、独立的 Mann–Whitney 分析流程、返修稿和补充材料。
+
+| Added path / 新增路径 | English description | 中文说明 |
+| --- | --- | --- |
+| `Code/` | Habitat robustness analysis, annual corridor CEq sensitivity analysis, dependencies, and reproducible outputs. | 栖息地稳健性分析、年度廊道 CEq 敏感性分析、依赖文件和可复现输出。 |
+| `Data/` | Input tables for threshold, exposure-metric, and annual sensitivity analyses. | 阈值、暴露指标和年度敏感性分析的输入数据表。 |
+| `Figures/` | Supplementary stability, convergence, CEq-profile, and valid-area figures. | 稳定性、收敛性、CEq 曲线和有效面积等补充图件。 |
+| `mann_whitney_habitat_project/` | Standalone Mann–Whitney statistical workflow with input workbooks, quality-control outputs, and Chinese documentation. | 独立的 Mann–Whitney 统计流程，包含输入工作簿、质量控制输出和中文说明。 |
+| `Ecological_Informatics_ms_revised_purple.docx` | Revised manuscript with changes highlighted in purple. | 以紫色标示修改内容的返修稿。 |
+| `Supplementary_Material.docx` | Supplementary methods, tables, and figures. | 补充方法、表格和图件。 |
+| `README.md` | Bilingual package overview, file guide, and reproduction instructions. | 中英文对照的项目概述、文件说明和复现指南。 |
+
+The combined sensitivity figure is available at `Code/outputs/combined_sensitivity_panels.png`. It uses Times New Roman, includes the threshold and 1:1-line legend in panel A, and is exported at 500 PPI.
+
+组合敏感性图位于 `Code/outputs/combined_sensitivity_panels.png`，使用 Times New Roman 字体，A 图包含阈值和 1:1 线图例，并以 500 PPI 输出。
 

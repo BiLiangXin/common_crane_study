@@ -198,7 +198,6 @@ The [`Statistical and sensitivity analyses/`](Statistical%20and%20sensitivity%20
 | `Code/` | Habitat robustness analysis, annual corridor CEq sensitivity analysis, dependencies, and reproducible outputs. | 栖息地稳健性分析、年度廊道 CEq 敏感性分析、依赖文件和可复现输出。 |
 | `Data/` | Input tables for threshold, exposure-metric, and annual sensitivity analyses. | 阈值、暴露指标和年度敏感性分析的输入数据表。 |
 | `Figures/` | Supplementary stability, convergence, CEq-profile, and valid-area figures. | 稳定性、收敛性、CEq 曲线和有效面积等补充图件。 |
-| `mann_whitney_habitat_project/` | Standalone Mann–Whitney statistical workflow with input workbooks, quality-control outputs, and Chinese documentation. | 独立的 Mann–Whitney 统计流程，包含输入工作簿、质量控制输出和中文说明。 |
 | `Ecological_Informatics_ms_revised_purple.docx` | Revised manuscript with changes highlighted in purple. | 以紫色标示修改内容的返修稿。 |
 | `Supplementary_Material.docx` | Supplementary methods, tables, and figures. | 补充方法、表格和图件。 |
 | `README.md` | Bilingual package overview, file guide, and reproduction instructions. | 中英文对照的项目概述、文件说明和复现指南。 |
